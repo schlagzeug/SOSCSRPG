@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Engine.Models
 {
@@ -16,7 +12,7 @@ namespace Engine.Models
             loc.YCoordinate = yCoordinate;
             loc.Name = name;
             loc.Description = description;
-            loc.ImageName = imageName;
+            loc.ImageName = $"/Engine;component/Images/Locations/{imageName}";
 
             _locations.Add(loc);
         }
